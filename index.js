@@ -31,9 +31,9 @@ const licenseType = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  let outputFileName = "README.md";
+  //let outputFileName = "README.md";
 
-  fs.writeFile(outputFileName, data, (err) =>
+  fs.writeFile(fileName, data, (err) =>
     err
       ? console.log(err)
       : console.log("README file has been generated successfully")
@@ -89,6 +89,7 @@ init();
 
 // function format markup
 function formatMarkUp(objResponses) {
+  let nameOfFile = "README.md";
   let markUp = `
   # ${objResponses.projName} \n\n
   ## Description \n
@@ -106,5 +107,5 @@ function formatMarkUp(objResponses) {
   ## License \n
   Licensed under the [${objResponses.projLicense}](LICENSE) license.
   `;
-  console.log(markUp);
+  writeToFile(nameOfFile, markUp);
 }
