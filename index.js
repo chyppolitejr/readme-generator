@@ -30,9 +30,9 @@ const licenseType = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  let fileName = "README.md";
+  let outputFileName = "README.md";
 
-  fs.writeFile(fileName, data, (err) =>
+  fs.writeFile(outputFileName, data, (err) =>
     err
       ? console.log(err)
       : console.log("README file has been generated successfully")
@@ -41,40 +41,54 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-  inquirer.prompt([
-    {
-      type: "input",
-      name: "projName",
-      message: questions[0],
-    },
-    {
-      type: "input",
-      name: "projDesc",
-      message: questions[1],
-    },
-    {
-      type: "input",
-      name: "projInstInstr",
-      message: questions[2],
-    },
-    {
-      type: "input",
-      name: "projUse",
-      message: questions[3],
-    },
-    {
-      type: "input",
-      name: "projContrib",
-      message: questions[4],
-    },
-    {
-      type: "list",
-      name: "projLicense",
-      message: questions[5],
-      choices: [],
-    },
-  ]);
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "projName",
+        message: questions[0],
+      },
+      {
+        type: "input",
+        name: "projDesc",
+        message: questions[1],
+      },
+      {
+        type: "input",
+        name: "projInstInstr",
+        message: questions[2],
+      },
+      {
+        type: "input",
+        name: "projUse",
+        message: questions[3],
+      },
+      {
+        type: "input",
+        name: "projContrib",
+        message: questions[4],
+      },
+      {
+        type: "list",
+        name: "projLicense",
+        message: questions[5],
+        choices: licenseType,
+      },
+    ])
+    .then((response) => formatMarkUp(response));
 }
 
 // function call to initialize program
 init();
+
+// function format markup
+function formatMarkUp(objResponses) {
+  let markUp = `
+  # ${objResponses.projName} \n\n
+  ## Description \n
+  ${objResponses.projDesc} \n\n
+  ## Installation \n
+  ${objResponses.projInstInstr}
+  `;
+  console.log(markUp);
+}
