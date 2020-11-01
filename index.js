@@ -8,6 +8,7 @@ const questions = [
   "What are the installation instructions for the project?",
   "How do you use the application?",
   "Please provide a list of contributors, if any, along withy any third-party assets that require attribution, list the creators with links to their primary web presence. If you followed tutorials include those links here as well.",
+  "What is the URL to the deployed Application?",
   "What license type does this project use?",
 ];
 
@@ -69,6 +70,11 @@ function init() {
         message: questions[4],
       },
       {
+        type: "input",
+        name: "projURL",
+        message: "What is the URL for app (if deployed)?",
+      },
+      {
         type: "list",
         name: "projLicense",
         message: questions[5],
@@ -87,8 +93,18 @@ function formatMarkUp(objResponses) {
   # ${objResponses.projName} \n\n
   ## Description \n
   ${objResponses.projDesc} \n\n
+  ## Application Screenshots
+  ![Alt Text](url) \n\n
   ## Installation \n
   ${objResponses.projInstInstr}
+  ## Usage \n
+  ${objResponses.projUse} \n\n
+  ## Credits \n
+  ${objResponses.projContrib} \n\n
+  ## Deployed Application \n
+  ${objResponses.projURL} \n\n
+  ## License \n
+  Licensed under the [${objResponses.projLicense}](LICENSE) license.
   `;
   console.log(markUp);
 }
