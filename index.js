@@ -10,6 +10,7 @@ const questions = [
   "Please provide a list of contributors, if any, along withy any third-party assets that require attribution, list the creators with links to their primary web presence. If you followed tutorials include those links here as well.",
   "What is the URL to the deployed Application?",
   "What license type does this project use?",
+  "What technologies were used?",
 ];
 
 const licenseType = [
@@ -80,6 +81,11 @@ function init() {
         message: questions[5],
         choices: licenseType,
       },
+      {
+        type: "input",
+        name: "projTech",
+        message: "What technologies were used to created the project?",
+      },
     ])
     .then((response) => formatMarkUp(response));
 }
@@ -89,11 +95,13 @@ init();
 
 // function format markup
 function formatMarkUp(objResponses) {
-  let nameOfFile = "README.md";
+  let nameOfFile = "./generated-readme/README.md";
   let markUp = `
   # ${objResponses.projName} \n\n
   ## Description \n
   ${objResponses.projDesc} \n\n
+  ## Technologies Used \n
+  ${objResponses.projTech} \n\n
   ## Application Screenshots
   ![Alt Text](url) \n\n
   ## Installation \n

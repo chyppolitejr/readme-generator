@@ -4,7 +4,7 @@
 
   ## Description 
 
-  Simple NodeJS Command Line Application to auto-generate a README file based on user prompts 
+  Command Line Application to generate README file 
 
 
   ## Application Screenshots
@@ -13,10 +13,10 @@
 
   ## Installation 
 
-  copy to local folder and run from terminal
+  download project to local drive and run via command line.
   ## Usage 
 
-  After launching the application you will be presented with a series of questions. Once all questions have been answered a README file will be generated in the same directory that the application was saved to 
+  run index.js and the answer the questions about the project you would like to generate the README for. Once completed the file will be auto-generated 
 
 
   ## Credits 
