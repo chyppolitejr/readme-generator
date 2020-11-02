@@ -107,5 +107,6 @@ function formatMarkUp(objResponses) {
   ## License \n
   Licensed under the [${objResponses.projLicense}](LICENSE) license.
   `;
+  // create the file
   writeToFile(nameOfFile, markUp);
 }
