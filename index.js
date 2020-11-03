@@ -103,7 +103,7 @@ function formatMarkUp(objResponses) {
   ## Technologies Used \n
   ${objResponses.projTech} \n\n
   ## Application Screenshots
-  ![Alt Text](url) \n\n
+  <!-- ![Alt Text](url)  Uncomment this line to add application image --> \n\n
   ## Installation \n
   ${objResponses.projInstInstr}
   ## Usage \n
