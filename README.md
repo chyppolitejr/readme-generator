@@ -1,35 +1,37 @@
+# Good README Generator
 
-  # Good README Generator 
+## Description
 
+a simple command line program that creates a README file based on the answers to some questions
 
-  ## Description 
+## Technologies Used
 
-  Command Line Application to generate README file 
+NodeJS, Inquirer
 
+## Application Screenshots
 
-  ## Application Screenshots
-  ![Alt Text](url) 
+  <!-- ![Alt Text](url)  Uncomment this line to add application image -->
 
+## Application Usage Video
 
-  ## Installation 
+[Video Link](https://youtu.be/NDMf5QDzd4M)
 
-  download project to local drive and run via command line.
-  ## Usage 
+## Installation
 
-  run index.js and the answer the questions about the project you would like to generate the README for. Once completed the file will be auto-generated 
+copy folder contents to local drive
 
+## Usage
 
-  ## Credits 
+run the application from the command line and answer the questions
 
-  na 
+## Credits
 
+NA
 
-  ## Deployed Application 
+## Deployed Application
 
-  na 
+NA
 
+## License
 
-  ## License 
-
-  Licensed under the [MIT](LICENSE) license.
-  
+Licensed under the [MIT](LICENSE) license.

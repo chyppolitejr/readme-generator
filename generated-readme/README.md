@@ -1,10 +1,10 @@
 
-  # README Generator 
+  # Good README Generator 
 
 
   ## Description 
 
-  Creates README file based on some answers to some questions 
+  a simple command line program that creates a README file based on the answers to some questions 
 
 
   ## Technologies Used 
@@ -13,25 +13,25 @@
 
 
   ## Application Screenshots
-  ![Alt Text](url) 
+  <!-- ![Alt Text](url)  Uncomment this line to add application image --> 
 
 
   ## Installation 
 
-  copy files and folder to local directory. Run from command line using NodeJS
+  copy folder contents to local drive
   ## Usage 
 
-  run application from command line. Answer questions. README file is generated for you 
+  run the application from the command line and answer the questions 
 
 
   ## Credits 
 
-  na 
+  NA 
 
 
   ## Deployed Application 
 
-  na 
+  NA 
 
 
   ## License 
