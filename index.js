@@ -99,7 +99,7 @@ function formatMarkUp(objResponses) {
   let markUp = `
   # ${objResponses.projName} \n\n
   # Table of Contents \n\n
-  [Description](#description)
+  [Description](#description) \n
   [Technologies Used](#technologies-used) \n
   [Screenshots](#application-screenshots) \n
   [Installation](#installation) \n
