@@ -100,12 +100,12 @@ function formatMarkUp(objResponses) {
   # ${objResponses.projName} \n\n
   # Table of Contents \n\n
   [Description](#description)
-  [Technologies Used](#technologies-used)
-  [Screenshots](#application-screenshots)
-  [Installation](#installation)
-  [Application Usage](#usage)
-  [Credits](#credits)
-  [Deployed Application](#deployed-application)
+  [Technologies Used](#technologies-used) \n
+  [Screenshots](#application-screenshots) \n
+  [Installation](#installation) \n
+  [Application Usage](#usage) \n
+  [Credits](#credits) \n
+  [Deployed Application](#deployed-application) \n
   [License](#license) \n\n
   ## Description \n
   ${objResponses.projDesc} \n\n
