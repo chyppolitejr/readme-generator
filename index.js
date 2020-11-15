@@ -98,6 +98,15 @@ function formatMarkUp(objResponses) {
   let nameOfFile = "./generated-readme/README.md";
   let markUp = `
   # ${objResponses.projName} \n\n
+  # Table of Contents \n\n
+  [Description](#description)
+  [Technologies Used](#technologies-used)
+  [Screenshots](#application-screenshots)
+  [Installation](#installation)
+  [Application Usage](#usage)
+  [Credits](#credits)
+  [Deployed Application](#deployed-application)
+  [License](#license) \n\n
   ## Description \n
   ${objResponses.projDesc} \n\n
   ## Technologies Used \n
