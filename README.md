@@ -2,35 +2,31 @@
 
 ## Description
 
-a simple command line program that creates a README file based on the answers to some questions
-
-## Technologies Used
-
-NodeJS, Inquirer
+Command Line Application to generate README file
 
 ## Application Screenshots
 
-  <!-- ![Alt Text](url)  Uncomment this line to add application image -->
+![Alt Text](url)
 
-## Application Usage Video
+## Application Demo Video
 
-[Video Link](https://youtu.be/NDMf5QDzd4M)
+https://youtu.be/ELRfAmuils8
 
 ## Installation
 
-copy folder contents to local drive
+  <!-- download project to local drive and run via command line. -->
 
 ## Usage
 
-run the application from the command line and answer the questions
+run index.js and the answer the questions about the project you would like to generate the README for. Once completed the file will be auto-generated
 
 ## Credits
 
-NA
+na
 
 ## Deployed Application
 
-NA
+na
 
 ## License
 

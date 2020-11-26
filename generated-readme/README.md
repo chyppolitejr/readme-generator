@@ -1,11 +1,12 @@
 
-  # README Generator 
+  # Good README Generator 
 
 
   # Table of Contents 
 
 
-  [Description](#description)
+  [Description](#description) 
+
   [Technologies Used](#technologies-used) 
 
   [Screenshots](#application-screenshots) 
@@ -23,12 +24,12 @@
 
   ## Description 
 
-  NodeJS Command Line Application to generate a README file using the answers to some questions 
+  CLI application for auto-generating a README file 
 
 
   ## Technologies Used 
 
-  NodeJS, NPM, Inquirer 
+  javascript, nodeJs, npm, inquirer 
 
 
   ## Application Screenshots
@@ -37,10 +38,10 @@
 
   ## Installation 
 
-  clone repo to local machine. run npm install to re-install any dependencies
+  copy repository to local drive. navigate to local directory and run npm install for dependencies
   ## Usage 
 
-  open new terminal while in local repo. run node index.js from terminal 
+  navigate to directory in a terminal. run node index.js. answer all questions. navigate to generated-readme directory to view file 
 
 
   ## Credits 
@@ -50,7 +51,7 @@
 
   ## Deployed Application 
 
-  this is not a web app 
+  NA 
 
 
   ## License 
